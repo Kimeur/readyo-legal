@@ -59,14 +59,14 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 25 September 2026 · Applies to the Readyo app for iPhone, version 1.0 and later.</p>
+  <p class="updated">Last updated: 26 September 2026 · Applies to the Readyo app for iPhone, version 1.0 and later.</p>
 
   <div class="summary">
     <strong>In short</strong>
     <ul>
       <li>Readyo is a practice tool: an AI interviewer asks you questions out loud and you answer by voice.</li>
       <li>You don't create an account with an email or a password. The app signs you in with an anonymous ID.</li>
-      <li>We don't keep your voice recordings. Each answer is sent to Groq to be turned into text, and we don't store the audio. The interviewer's voice is generated on your iPhone.</li>
+      <li>We don't keep your voice recordings. Each answer is sent to Groq to be turned into text, and we don't store the audio. The interviewer's voice is generated from the text of each question by Microsoft Azure AI Speech (or, as a backup, on your iPhone). Your own voice is never sent to Microsoft.</li>
       <li>Your transcripts and scores are kept until you delete them in the app: Profile → Delete my data.</li>
       <li>No ads, no tracking, no camera, and we never sell your data.</li>
     </ul>
@@ -101,7 +101,8 @@
     <tbody>
       <tr><td>Supabase (hosting, EU region)</td><td>Anonymous account ID, job ad, transcripts, reports</td><td>Database, sign-in and server functions</td></tr>
       <tr><td>Groq</td><td>The recording of each answer; the job ad, the questions and your transcripts (not your name, email or account ID)</td><td>Speech to text for your answers; planning questions, follow-ups, scoring, feedback and improved answers</td></tr>
-            <tr><td>RevenueCat</td><td>Anonymous account ID and purchase history</td><td>Managing in-app purchases</td></tr>
+      <tr><td>Microsoft (Azure AI Speech)</td><td>The text of the interviewer's lines (greeting, questions, follow-ups, closing). Never your voice, your answers or your account ID</td><td>Generating the interviewer's voice</td></tr>
+      <tr><td>RevenueCat</td><td>Anonymous account ID and purchase history</td><td>Managing in-app purchases</td></tr>
       <tr><td>Apple</td><td>Payment details and purchase history (Readyo never sees your payment details)</td><td>In-app purchases and subscriptions</td></tr>
       <tr><td>Expo</td><td>Technical data such as app version and platform</td><td>Delivering app updates</td></tr>
     </tbody>
@@ -110,7 +111,7 @@
   <p>These partners process data under their own terms. Please don't include personal details such as your name, address or phone number in your answers. Groq may keep data it processes for a limited time under its own policy.</p>
 
   <h2>Transfers outside your country</h2>
-  <p>Our database is hosted in the European Union. Some partners (Groq, RevenueCat) process data in the United States. Where the GDPR applies, these transfers rely on the European Commission's Standard Contractual Clauses or the EU–US Data Privacy Framework.</p>
+  <p>Our database is hosted in the European Union. Some partners (Groq, Microsoft Azure, RevenueCat) process data in the United States. Where the GDPR applies, these transfers rely on the European Commission's Standard Contractual Clauses or the EU–US Data Privacy Framework.</p>
 
   <h2>Legal bases (GDPR)</h2>
   <ul>
@@ -152,7 +153,7 @@
     <ul>
       <li>Readyo est un outil d'entraînement : un intervieweur IA vous pose des questions à voix haute et vous répondez à l'oral.</li>
       <li>Pas d'email ni de mot de passe : l'app vous connecte avec un identifiant anonyme.</li>
-      <li>Nous ne conservons pas vos enregistrements vocaux : chaque réponse est envoyée à Groq pour être transcrite, puis l'audio n'est pas stocké. La voix du recruteur est générée sur votre iPhone.</li>
+      <li>Nous ne conservons pas vos enregistrements vocaux : chaque réponse est envoyée à Groq pour être transcrite, puis l'audio n'est pas stocké. La voix du recruteur est générée à partir du texte des questions par Microsoft Azure AI Speech (ou, en secours, sur votre iPhone). Votre voix n'est jamais envoyée à Microsoft.</li>
       <li>Les transcriptions et les scores sont conservés jusqu'à ce que vous les supprimiez : Profil → Supprimer mes données.</li>
       <li>Le texte de vos réponses est analysé par Groq (sans votre nom). Base de données hébergée dans l'UE (Supabase). Achats via Apple et RevenueCat.</li>
       <li>Aucune publicité, aucun pistage, pas de caméra, aucune vente de données. La version anglaise ci-dessus fait foi.</li>
@@ -164,7 +165,7 @@
     <ul>
       <li>Readyo es una herramienta de práctica: un entrevistador de IA te hace preguntas en voz alta y respondes hablando.</li>
       <li>Sin email ni contraseña: la app te identifica con un ID anónimo.</li>
-      <li>No guardamos tus grabaciones de voz: cada respuesta se envía a Groq para transcribirla y el audio no se almacena. La voz del entrevistador se genera en tu iPhone.</li>
+      <li>No guardamos tus grabaciones de voz: cada respuesta se envía a Groq para transcribirla y el audio no se almacena. La voz del entrevistador se genera a partir del texto de las preguntas con Microsoft Azure AI Speech (o, como respaldo, en tu iPhone). Tu voz nunca se envía a Microsoft.</li>
       <li>Las transcripciones y puntuaciones se guardan hasta que las borres: Perfil → Borrar mis datos.</li>
       <li>Groq analiza el texto de tus respuestas (sin tu nombre). Base de datos alojada en la UE (Supabase). Compras con Apple y RevenueCat.</li>
       <li>Sin anuncios, sin rastreo, sin cámara y nunca vendemos tus datos. La versión en inglés es la de referencia.</li>
@@ -176,7 +177,7 @@
     <ul>
       <li>تطبيق <bdi>Readyo</bdi> أداة للتدرّب: محاور بالذكاء الاصطناعي يطرح عليك الأسئلة بصوت عالٍ وأنت تجيب بصوتك.</li>
       <li>لا بريد إلكتروني ولا كلمة مرور: يسجّل التطبيق دخولك بمعرّف مجهول الهوية.</li>
-      <li>لا نحتفظ بتسجيلاتك الصوتية: تُرسل كل إجابة إلى <bdi>Groq</bdi> لتحويلها إلى نص، ولا نخزّن الصوت. يُولَّد صوت المُحاوِر على جهازك.</li>
+      <li>لا نحتفظ بتسجيلاتك الصوتية: تُرسل كل إجابة إلى <bdi>Groq</bdi> لتحويلها إلى نص، ولا نخزّن الصوت. يُولَّد صوت المُحاوِر من نص الأسئلة عبر <bdi>Microsoft Azure AI Speech</bdi> (أو على جهازك كحلّ احتياطي). لا يُرسَل صوتك أبدًا إلى <bdi>Microsoft</bdi>.</li>
       <li>تُحفظ النصوص والنتائج حتى تحذفها من التطبيق: الملف الشخصي ← حذف بياناتي.</li>
       <li>تحلّل <bdi>Groq</bdi> نص إجاباتك (دون اسمك). قاعدة البيانات مستضافة في الاتحاد الأوروبي (<bdi>Supabase</bdi>). المشتريات عبر <bdi>Apple</bdi> و<bdi>RevenueCat</bdi>.</li>
       <li>لا إعلانات، لا تتبّع، لا كاميرا، ولا نبيع بياناتك أبدًا. النسخة الإنجليزية أعلاه هي المرجع.</li>
